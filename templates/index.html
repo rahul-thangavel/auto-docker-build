@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask Notes App</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 50px; }
+        form { margin-bottom: 20px; }
+        input, textarea { display: block; margin-bottom: 10px; width: 300px; }
+        .note { background: #f0f0f0; padding: 10px; margin-bottom: 10px; border-radius: 6px; }
+    </style>
+</head>
+<body>
+    <h1>📝 Flask Notes</h1>
+    <form method="POST" action="/add">
+        <input type="text" name="title" placeholder="Note title" required>
+        <textarea name="content" placeholder="Note content"></textarea>
+        <button type="submit">Add Note</button>
+    </form>
+
+    {% for note in notes %}
+        <div class="note">
+            <h3>{{ note['title'] }}</h3>
+            <p>{{ note['content'] }}</p>
+            <small>Created at: {{ note['created_at'] }}</small>
+        </div>
+    {% endfor %}
+</body>
+</html>
+

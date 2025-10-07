@@ -17,13 +17,14 @@ This file provides step-by-step instructions for using the **Dockmate-powered au
 ## 2. Project Structure
 
 auto-docker-build/
-├── demo_app/
-│ ├── app.py
-│ └── requirements.txt
-├── INSTRUCTIONS.md
-├── .dockerignore
-└── README.md
-└── LICENSE
+├── app.py               
+├── Dockerfile           
+├── requirements.txt     
+├── INSTRUCTIONS.md      
+├── README.md            
+├── LICENSE                   
+└── templates/           
+    ├── index.html
 
 
 yaml

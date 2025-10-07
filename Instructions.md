@@ -18,8 +18,7 @@ This file provides step-by-step instructions for using the **Dockmate-powered au
 
 auto-docker-build/
 ├── app.py               
-├── Dockerfile           
-├── requirements.txt     
+├── Dockerfile             
 ├── INSTRUCTIONS.md      
 ├── README.md            
 ├── LICENSE                   
